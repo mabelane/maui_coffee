@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>maui_coffee</name>
+    </assembly>
+    <members>
+        <member name="T:maui_coffee.ViewModel.CoffeeViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:maui_coffee.ViewModel.CoffeeViewModel.getCoffeeCommand">
+            <summary>The backing field for <see cref="P:maui_coffee.ViewModel.CoffeeViewModel.GetCoffeeCommand"/>.</summary>
+        </member>
+        <member name="P:maui_coffee.ViewModel.CoffeeViewModel.GetCoffeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:maui_coffee.ViewModel.CoffeeViewModel.GetCoffeeAsync"/>.</summary>
+        </member>
+    </members>
+</doc>

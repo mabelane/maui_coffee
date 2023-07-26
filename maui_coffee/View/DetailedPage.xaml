@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:view="clr-namespace:maui_coffee.View"
+             x:DataType="view:DetailedPage"
+             x:Class="maui_coffee.View.DetailedPage"
+             xmlns:ui="clr-namespace:Xe.AcrylicView;assembly=Xe.AcrylicView"
+             xmlns:fonts="clr-namespace:maui_coffee.Model"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Transparent"
+             >
+
+    <VerticalStackLayout BackgroundColor="#020204" HorizontalOptions="FillAndExpand">
+       <StackLayout>
+           
+           <Border x:Name="MainImg"
+                        StrokeShape="RoundRectangle 0,0,40,40"
+                        BackgroundColor="Black"
+                        StrokeThickness="0"
+                        Stroke="#000000"
+                        HeightRequest="{Binding ScrHeight}"
+                >
+                <Grid RowDefinitions=".7*, .2*">
+                    <Image Aspect="Fill"
+                       Source="red.jpeg" Grid.RowSpan="2"/>
+
+                    <FlexLayout Margin="8,15" JustifyContent="SpaceBetween">
+                        <ImageButton HeightRequest="60" WidthRequest="60" BackgroundColor="#020A0E" CornerRadius="10" Padding="9">
+                            <ImageButton.Source>
+                                <FontImageSource FontFamily="FontAwesome" Glyph="{x:Static fonts:FontIcons.Home}" Color="DimGrey"/>
+                            </ImageButton.Source>
+                        </ImageButton>
+
+                        <ImageButton HeightRequest="60" WidthRequest="60" BackgroundColor="#020A0E" CornerRadius="10" Padding="9">
+                            <ImageButton.Source>
+                                <FontImageSource FontFamily="FontAwesome" Glyph="{x:Static fonts:FontIcons.Heart}" Color="DimGrey"/>
+                            </ImageButton.Source>
+                        </ImageButton>
+                    </FlexLayout>
+                    <ui:AcrylicView Grid.Row="1" EffectStyle="Dark" TintOpacity=".25"
+                                    HeightRequest="120" CornerRadius="30" BorderThickness="0"
+                                    VerticalOptions="End"
+                                    >
+
+                        <FlexLayout JustifyContent="SpaceBetween" Margin="20,10">
+                            <StackLayout >
+                                <Label Text="Cappuccino" TextColor="#FFFFFF" FontSize="20" FontAttributes="Bold"/>
+                                <Label Text="Binding Extras" TextColor="#aeaeae" FontSize="14"/>
+
+                                <HorizontalStackLayout>
+                                    <Image HeightRequest="15">
+                                        <Image.Source>
+                                            <FontImageSource FontFamily="FontAwesome" Glyph="{x:Static fonts:FontIcons.Star}"
+                                                             Color="#D17842"/>
+                                        </Image.Source>
+
+                                    </Image>
+                                    <Label Text="Binding Rating" TextColor="AliceBlue" Padding="10,10,0,10" FontSize="14" FontAttributes="Bold"/>
+                                </HorizontalStackLayout>
+                            </StackLayout>
+                            <StackLayout>
+                                <HorizontalStackLayout Spacing="10">
+                                    <Border HeightRequest="50" WidthRequest="50" BackgroundColor="#020204"
+                                            StrokeShape="RoundRectangle 10" StrokeThickness="0"
+                                            >
+                                        <StackLayout Padding="5">
+                                            <Image WidthRequest="20" HeightRequest="20">
+                                                <Image.Source>
+                                                    <FontImageSource FontFamily="FontAwesome" Glyph="{x:Static fonts:FontIcons.Bean}" Color="#D17842"/>
+
+                                                </Image.Source>
+
+                                            </Image>
+                                            <Label Text="Coffee" FontSize="12" TextColor="AliceBlue" HorizontalTextAlignment="Center"/>
+                                        </StackLayout>
+
+                                    </Border>
+                                    <Border HeightRequest="50" WidthRequest="50" BackgroundColor="#020204"
+                                            StrokeShape="RoundRectangle 10" StrokeThickness="0"
+                                            >
+                                        <StackLayout Padding="5" >
+                                            <Image WidthRequest="20" HeightRequest="20">
+                                                <Image.Source>
+                                                    <FontImageSource FontFamily="FontAwesome" Glyph="{x:Static fonts:FontIcons.Droplet}" Color="#D17842"/>
+
+                                                </Image.Source>
+
+                                            </Image>
+                                            <Label Text="Milk" FontSize="12" TextColor="AliceBlue" HorizontalTextAlignment="Center"/>
+                                        </StackLayout>
+
+                                    </Border>
+                                </HorizontalStackLayout>
+                                <Border Margin="0,8" HeightRequest="40" BackgroundColor="#020204" StrokeThickness="0" StrokeShape="RoundRectangle 15" Padding="10">
+                                    <Label Text="Medium Roasted"  HorizontalTextAlignment="Center" FontSize="12" TextColor="AliceBlue" VerticalTextAlignment="Center" />
+
+                                </Border>
+                            </StackLayout>
+                        </FlexLayout>
+                    </ui:AcrylicView>
+                </Grid>
+           </Border>
+
+
+       </StackLayout>
+    <!-- ******************************************** Description and Cup Sizes ************************************************************-->
+
+
+
+        <ScrollView VerticalOptions="FillAndExpand">
+
+        <StackLayout Padding="10,15">
+            <Label Text="Description" FontSize="Medium" TextColor="White" Padding="0,10"/>
+            <Label Text="A cappuccino is a coffee-based drink made primarily from espresso and milk" FontSize="16" TextColor="AliceBlue"/>
+        <StackLayout >
+
+        <StackLayout Padding="0,8">
+
+        <Label Text="Size" FontSize="Medium" TextColor="White" Padding="0,10"/>
+
+        <FlexLayout JustifyContent="SpaceBetween">
+            <Border StrokeShape="RoundRectangle 10"
+                BackgroundColor="Black"
+                    Stroke="#F5761A"
+                    StrokeThickness="1"
+                HeightRequest="35"
+                    WidthRequest="110">
+                <Label Text="S" FontSize="Default" FontAttributes="Bold" TextColor="AliceBlue"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       />
+
+            </Border>
+            <Border StrokeShape="RoundRectangle 10"
+                BackgroundColor="#0D0D0D"
+                    Stroke="#0D0D0D"
+                    StrokeThickness="1"
+                HeightRequest="35"
+                    WidthRequest="110">
+                <Label Text="M" FontSize="Default" FontAttributes="Bold" TextColor="AliceBlue"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       />
+            </Border>
+            <Border StrokeShape="RoundRectangle 10"
+                BackgroundColor="#0D0D0D"
+                Stroke="#0D0D0D"
+                HeightRequest="35"
+                WidthRequest="110">
+                
+                <Label Text="L" FontSize="Default" FontAttributes="Bold" TextColor="AliceBlue"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       />
+            </Border>
+        </FlexLayout>
+
+        </StackLayout>
+
+        <StackLayout Padding="0,30">
+            <FlexLayout JustifyContent="SpaceBetween">
+                <StackLayout>
+                    <Label Text="Price" FontSize="Small" HorizontalTextAlignment="Center" TextColor="AliceBlue"/>
+                    <Label Text="R 4.29"  TextColor="AliceBlue" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="End"/>
+                </StackLayout>
+                <Button WidthRequest="200"
+                        CornerRadius="17"
+                        BackgroundColor="#D17842"
+                        Text="Buy Now" FontSize="Medium"/>
+            </FlexLayout>
+        </StackLayout>
+
+        </StackLayout>
+        
+        </StackLayout>
+
+
+        </ScrollView>
+       
+
+        
+    </VerticalStackLayout>
+</ContentPage>

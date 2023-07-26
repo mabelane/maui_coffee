@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:blur="clr-namespace:Xe.AcrylicView;assembly=Xe.AcrylicView"
+             xmlns:model="clr-namespace:maui_coffee.Model"
+             xmlns:viewmodel="clr-namespace:maui_coffee.ViewModel"
+             x:DataType="viewmodel:CoffeeViewModel"
+             xmlns:fonts="clr-namespace:maui_coffee.Model"
+             x:Class="maui_coffee.View.Home"
+             Title="Home">
+
+    <Grid ColumnDefinitions="*" ColumnSpacing="0" RowDefinitions="*,Auto" RowSpacing="0">
+        <ScrollView BackgroundColor="#0C0F14" >
+        <VerticalStackLayout Padding="12,25">
+            <Label Text="Find the best"
+                   TextColor="AliceBlue"
+                   FontSize="35"
+                   FontAttributes="Bold"
+                   />
+            <Label Text="coffee for you"
+                   TextColor="AliceBlue"
+                   FontSize="35"
+                   FontAttributes="Bold"
+                   />
+
+            <Border StrokeShape="RoundRectangle 12" Stroke="#141921" HeightRequest="45" Margin="0,25">
+                <SearchBar Placeholder="Find your coffee" BackgroundColor="#141921"
+                           CancelButtonColor="Beige" TextColor="AliceBlue"
+                           
+                           />
+            </Border>
+
+            <StackLayout>
+                <CollectionView x:Name="coffeeType" ItemsLayout="HorizontalList" ItemsSource="{Binding Coffees}">
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Coffee">
+                            <Border StrokeShape="RoundRectangle 20" HeightRequest="260" WidthRequest="170" Margin="10" StrokeThickness="0">
+                                <Border.Background>
+                                    <LinearGradientBrush EndPoint="1,1">
+                                        <GradientStop Color="#4d4d4d"
+                                                      Offset="0.1" />
+                                        <GradientStop Color="#2C2C2C"
+                                                      Offset="0.5" />
+                                        <GradientStop Color="#202020"
+                                                      Offset="0.7" />
+
+
+                                    </LinearGradientBrush>
+
+                                </Border.Background>
+
+                                <StackLayout >
+                                    <Border HeightRequest="140" Margin="10" StrokeShape="RoundRectangle 10" StrokeThickness="0" Stroke="Transparent" BackgroundColor="Transparent">
+
+                                        <Grid RowDefinitions=".7*, .2*">
+                                            <Image Source="{Binding ImgPath}" Aspect="Fill" Grid.RowSpan="2" BackgroundColor="Transparent"/>
+
+                                            <blur:AcrylicView  EffectStyle="ExtraDark" TintOpacity=".25" Padding="10,0"
+                                                         CornerRadius="0,0,0,15" HeightRequest="27" WidthRequest="65"
+                                                        HorizontalOptions="End" VerticalOptions="Start">
+
+                                                <HorizontalStackLayout >
+                                                    <Image HeightRequest="15">
+                                                        <Image.Source>
+                                                            <FontImageSource FontFamily="FontAwesome" Glyph="{x:Static fonts:FontIcons.Star}"
+                                                             Color="#D17842"/>
+                                                        </Image.Source>
+
+                                                    </Image>
+                                                    <Label Text="{Binding Rating}" TextColor="AliceBlue"  FontSize="15" FontAttributes="Bold" HeightRequest="19" Padding="5,0"/>
+                                                </HorizontalStackLayout>
+
+                                            </blur:AcrylicView>
+
+                                        </Grid>
+
+                                    </Border>
+                                    <StackLayout Padding="10,0">
+                                        <Label Text="{Binding Title}" FontSize="18" TextColor="White" />
+                                        <Label Text="{Binding Extras}" FontSize="12" TextColor="#aeaeae"/>
+
+                                    </StackLayout>
+
+                                    <StackLayout Padding="10" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <FlexLayout JustifyContent="SpaceBetween" VerticalOptions="Center" HorizontalOptions="Center">
+                                            <Label Text="{Binding Price}"  TextColor="AliceBlue" FontSize="Large" FontAttributes="Bold" HeightRequest="50"/>
+
+                                            <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#020A0E" 
+                                                         CornerRadius="10" Background="#D17842" Padding="8"
+                                                         >
+                                                <ImageButton.Source>
+                                                    <FontImageSource FontFamily="FontAwesome" Glyph="{x:Static fonts:FontIcons.Add}" Color="AliceBlue"/>
+                                                </ImageButton.Source>
+                                            </ImageButton>
+                                        </FlexLayout>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </StackLayout>
+            <Label Text="Special for you" TextColor="AliceBlue" Padding="10,30" FontAttributes="Bold" FontSize="20"/>
+
+            <Border Padding="10" StrokeShape="RoundRectangle 15">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="#4d4d4d"
+                                                      Offset="0.1" />
+                        <GradientStop Color="#2C2C2C"
+                                                      Offset="0.5" />
+                        <GradientStop Color="#202020"
+                                                      Offset="0.7" />
+
+                    </LinearGradientBrush>
+                </Border.Background>
+                <HorizontalStackLayout>
+                    <Frame HeightRequest="140" Padding="0" WidthRequest="120">
+                        <Image Source="coffee.jpeg" Aspect="Fill"/>
+                    </Frame>
+                    <StackLayout Padding="8">
+                        <Label Text="5 Coffee Beans You" TextColor="AliceBlue" FontSize="23" 
+                           FontAttributes="Bold" 
+                           />
+                        <Label Text="Must Try!" TextColor="AliceBlue" FontSize="23" 
+                           FontAttributes="Bold" MaxLines="2"
+                           />
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+        <Button Text="Get Monkeys" Command="{Binding GetCoffeeCommand}"
+                 Grid.Row="1"
+                />
+    </Grid>
+</ContentPage>
