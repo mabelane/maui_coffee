@@ -1,23 +1,23 @@
 [
 
-  {
-    "imgPath": "capp_oatmilk.jpeg",
-    "title": "Cappuccino",
-    "extras": "",
-    "desc": "A cappuccino is a coffee-based drink made primarily from espresso and milk",
-    "price": 54.30,
-    "rating": 3.8
+   {
+    "Image": "https://raw.githubusercontent.com/mabelane/maui_coffee/main/maui_coffee/Resources/Images/img/black.jpeg",
+    "Title": "Cappuccino",
+    "Extras": "",
+    "Desc": "A cappuccino is a coffee-based drink made primarily from espresso and milk",
+    "Price": 54.30,
+    "Rating": 3.8
   },
   {
-    "imgPath": "white.jpeg",
-    "title": "Cappuccino",
-    "extras": "With White Chocolate",
-    "desc": "A cappuccino is a coffee-based drink made primarily from espresso with added white chocolate",
-    "price": 54.30,
-    "rating": 4.8
+    "Image": "https://raw.githubusercontent.com/mabelane/maui_coffee/main/maui_coffee/Resources/Images/img/coffee.jpeg",
+    "Title": "Cappuccino",
+    "Extras": "With White Chocolate",
+    "Desc": "A cappuccino is a coffee-based drink made primarily from espresso with added white chocolate",
+    "Price": 54.30,
+    "Rating": 4.8
   },
   {
-    "imgPath": "pexels.jpeg",
+    "Image": "https://raw.githubusercontent.com/mabelane/maui_coffee/main/maui_coffee/Resources/Images/img/filledglass.jpeg",
     "title": "Cappuccino",
     "extras": "With OatMilk",
     "desc": "A cappuccino is a coffee-based drink made primarily from espresso and steamed oatmilk",
@@ -25,21 +25,28 @@
     "rating": 3.5
   },
   {
-    "imgPath": "red.jpeg",
-    "title": "Iced Cappuccino",
-    "extras": "With cold foam and ice",
-    "desc": "An iced cappuccino is a coffee drink with espresso, milk, ice, and optional sweetener.",
-    "price": 35.30,
-    "rating": 3.5
+    "Image": "https://raw.githubusercontent.com/mabelane/maui_coffee/main/maui_coffee/Resources/Images/img/red.jpeg",
+    "Title": "Iced Cappuccino",
+    "Extras": "With cold foam and ice",
+    "Desc": "An iced cappuccino is a coffee drink with espresso, milk, ice, and optional sweetener.",
+    "Price": 35.30,
+    "Rating": 3.5
   },
   {
-    "imgPath": "black.jpeg",
-    "title": "Mocha Cappuccino",
-    "extras": "With Chocolate syrup",
-    "desc": "A mocha cappuccino is another name for a mocha or mocha latte: a drink made with espresso, steamed milk and chocolate.",
-    "price": 35.30,
-    "rating": 3.5
+    "Image": "https://raw.githubusercontent.com/mabelane/maui_coffee/main/maui_coffee/Resources/Images/img/white.jpeg",
+    "Title": "Mocha Cappuccino",
+    "Extras": "With Chocolate syrup",
+    "Desc": "A mocha cappuccino is another name for a mocha or mocha latte: a drink made with espresso, steamed milk and chocolate.",
+    "Price": 35.30,
+    "Rating": 3.5
+  },
+  {
+    "Image": "https://raw.githubusercontent.com/mabelane/maui_coffee/main/maui_coffee/Resources/Images/img/latte_art.jpeg",
+    "Title": "Mocha Cappuccino",
+    "Extras": "With Chocolate syrup",
+    "Desc": "A mocha cappuccino is another name for a mocha or mocha latte: a drink made with espresso, steamed milk and chocolate.",
+    "Price": 35.30,
+    "Rating": 3.5
   }
-
 
 ]
