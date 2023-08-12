@@ -3,7 +3,7 @@ namespace maui_coffee.Model
 {
 	public class Coffee
 	{
-        public string ImgPath { get; set; }
+        public string Image { get; set; }
         public string Title { get; set; }
         public string Extras { get; set; }
         public string Desc { get; set; }

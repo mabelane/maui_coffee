@@ -20,12 +20,15 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 				fonts.AddFont("icomoon.ttf", "FontAwesome");
 			});
-		builder .Services.AddSingleton<CoffeeService>();
-		builder .Services.AddSingleton<Home>();
-		builder .Services.AddSingleton<CoffeeViewModel>();
+        builder.Services.AddSingleton<CoffeeService>();
+        builder.Services.AddSingleton<CoffeeViewModel>();
+        builder.Services.AddTransient<DetailsViewModel>();
+        builder.Services.AddSingleton<Home>();
+        builder.Services.AddTransient<DetailedPage>();
+
 
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

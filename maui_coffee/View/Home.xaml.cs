@@ -11,6 +11,4 @@ public partial class Home : ContentPage
         BindingContext = coffeeViewModel;
     }
 
-
-
 }

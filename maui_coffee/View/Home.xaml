@@ -36,6 +36,7 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:Coffee">
                             <Border StrokeShape="RoundRectangle 20" HeightRequest="260" WidthRequest="170" Margin="10" StrokeThickness="0">
+                                
                                 <Border.Background>
                                     <LinearGradientBrush EndPoint="1,1">
                                         <GradientStop Color="#4d4d4d"
@@ -52,9 +53,13 @@
 
                                 <StackLayout >
                                     <Border HeightRequest="140" Margin="10" StrokeShape="RoundRectangle 10" StrokeThickness="0" Stroke="Transparent" BackgroundColor="Transparent">
+                                        <Border.GestureRecognizers>
+                                            <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CoffeeViewModel}}, Path=GoToDetailsCommand}"/>
 
+                                        </Border.GestureRecognizers>
                                         <Grid RowDefinitions=".7*, .2*">
-                                            <Image Source="{Binding ImgPath}" Aspect="Fill" Grid.RowSpan="2" BackgroundColor="Transparent"/>
+                                            <Image Source="{Binding Image}" Aspect="Fill" Grid.RowSpan="2" BackgroundColor="Transparent"/>
 
                                             <blur:AcrylicView  EffectStyle="ExtraDark" TintOpacity=".25" Padding="10,0"
                                                          CornerRadius="0,0,0,15" HeightRequest="27" WidthRequest="65"
@@ -77,14 +82,14 @@
 
                                     </Border>
                                     <StackLayout Padding="10,0">
-                                        <Label Text="{Binding Title}" FontSize="18" TextColor="White" />
+                                        <Label Text="{Binding Title}" FontSize="18" TextColor="White" MaxLines="1"/>
                                         <Label Text="{Binding Extras}" FontSize="12" TextColor="#aeaeae"/>
 
                                     </StackLayout>
 
                                     <StackLayout Padding="10" VerticalOptions="Center" HorizontalOptions="Center">
                                         <FlexLayout JustifyContent="SpaceBetween" VerticalOptions="Center" HorizontalOptions="Center">
-                                            <Label Text="{Binding Price}"  TextColor="AliceBlue" FontSize="Large" FontAttributes="Bold" HeightRequest="50"/>
+                                            <Label Text="{Binding Price, StringFormat='R {0:F2}'}"  TextColor="AliceBlue" FontSize="Large" FontAttributes="Bold" HeightRequest="50"/>
 
                                             <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#020A0E" 
                                                          CornerRadius="10" Background="#D17842" Padding="8"
@@ -134,9 +139,5 @@
 
         </VerticalStackLayout>
     </ScrollView>
-
-        <Button Text="Get Monkeys" Command="{Binding GetCoffeeCommand}"
-                 Grid.Row="1"
-                />
     </Grid>
 </ContentPage>

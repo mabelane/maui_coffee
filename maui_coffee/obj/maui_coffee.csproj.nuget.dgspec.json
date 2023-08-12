@@ -1,34 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MABELANE\\Documents\\Visual Studio 2022\\Projects\\maui_coffee\\maui_coffee\\maui_coffee.csproj": {}
+    "/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/maui_coffee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MABELANE\\Documents\\Visual Studio 2022\\Projects\\maui_coffee\\maui_coffee\\maui_coffee.csproj": {
+    "/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/maui_coffee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MABELANE\\Documents\\Visual Studio 2022\\Projects\\maui_coffee\\maui_coffee\\maui_coffee.csproj",
+        "projectUniqueName": "/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/maui_coffee.csproj",
         "projectName": "maui_coffee",
-        "projectPath": "C:\\Users\\MABELANE\\Documents\\Visual Studio 2022\\Projects\\maui_coffee\\maui_coffee\\maui_coffee.csproj",
-        "packagesPath": "C:\\Users\\MABELANE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MABELANE\\Documents\\Visual Studio 2022\\Projects\\maui_coffee\\maui_coffee\\obj\\",
+        "projectPath": "/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/maui_coffee.csproj",
+        "packagesPath": "/Users/mabelane/.nuget/packages/",
+        "outputPath": "/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MABELANE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/mabelane/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0-android",
           "net7.0-ios"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -85,7 +79,7 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.86, )",
+              "version": "[7.0.92, )",
               "autoReferenced": true
             },
             "Xamarin.Android.Glide": {
@@ -172,7 +166,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -211,7 +205,7 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.86, )",
+              "version": "[7.0.92, )",
               "autoReferenced": true
             }
           },
@@ -243,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -259,7 +253,7 @@
         "android-x86": {
           "#import": []
         },
-        "iossimulator-x64": {
+        "ios-arm64": {
           "#import": []
         }
       }

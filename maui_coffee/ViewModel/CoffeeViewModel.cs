@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using maui_coffee.Model;
 using maui_coffee.Services;
+using maui_coffee.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -20,9 +21,24 @@ namespace maui_coffee.ViewModel
         public CoffeeViewModel(CoffeeService coffeeService) 
         {
             this.coffeeService = coffeeService;
+            _ = GetCoffeeAsync();
         }
 
+
         [RelayCommand]
+        async Task GoToDetailsAsync(Coffee coffee)
+        {
+
+            if (coffee is null) return;
+
+            await Shell.Current.GoToAsync($"{nameof(DetailedPage)}", true,
+                new Dictionary<string, object>
+                {
+                    { "Coffee", coffee}
+                });
+        }
+
+        
        async Task GetCoffeeAsync()
         {
             try

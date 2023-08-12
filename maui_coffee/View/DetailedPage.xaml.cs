@@ -1,14 +1,20 @@
 ﻿
+using maui_coffee.ViewModel;
+
 namespace maui_coffee.View;
 
 public partial class DetailedPage : ContentPage
 {
-    public double ScrHeight { get; set; }
 
-    public DetailedPage()
+    public DetailedPage(DetailsViewModel viewModel)
     {
         InitializeComponent();
-        ScrHeight = (DeviceDisplay.Current.MainDisplayInfo.Height) * 0.18;
-        BindingContext = this;
+        
+        BindingContext = viewModel;
+    }
+
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
     }
 }

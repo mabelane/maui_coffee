@@ -12,64 +12,64 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = maui_coffee
-build_property.ProjectDir = C:\Users\MABELANE\Documents\Visual Studio 2022\Projects\maui_coffee\maui_coffee\
+build_property.ProjectDir = /Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/App.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/AppShell.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/MainPage.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/Resources/Styles/Colors.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/Resources/Styles/Styles.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/View/Cart.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/View/Cart.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.View.Cart.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Cart.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Cart.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Cart.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Cart.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/View/DetailedPage.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/View/DetailedPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.View.DetailedPage.xaml
-build_metadata.AdditionalFiles.TargetPath = View\DetailedPage.xaml
-build_metadata.AdditionalFiles.RelativePath = View\DetailedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View/DetailedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View/DetailedPage.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/View/Favourite.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/View/Favourite.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.View.Favourite.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Favourite.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Favourite.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Favourite.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Favourite.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/View/Home.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/View/Home.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.View.Home.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Home.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Home.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Home.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Home.xaml
 
-[C:/Users/MABELANE/Documents/Visual Studio 2022/Projects/maui_coffee/maui_coffee/View/Notification.xaml]
+[/Users/mabelane/Documents/MAUI/maui_coffee/maui_coffee/View/Notification.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_coffee.View.Notification.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Notification.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Notification.xaml
+build_metadata.AdditionalFiles.TargetPath = View/Notification.xaml
+build_metadata.AdditionalFiles.RelativePath = View/Notification.xaml

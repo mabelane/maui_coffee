@@ -4,14 +4,69 @@
         <name>maui_coffee</name>
     </assembly>
     <members>
+        <member name="T:maui_coffee.ViewModel.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:maui_coffee.ViewModel.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:maui_coffee.ViewModel.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:maui_coffee.ViewModel.BaseViewModel.Title">
+            <inheritdoc cref="F:maui_coffee.ViewModel.BaseViewModel.title"/>
+        </member>
         <member name="T:maui_coffee.ViewModel.CoffeeViewModel">
             <inheritdoc/>
         </member>
-        <member name="F:maui_coffee.ViewModel.CoffeeViewModel.getCoffeeCommand">
-            <summary>The backing field for <see cref="P:maui_coffee.ViewModel.CoffeeViewModel.GetCoffeeCommand"/>.</summary>
+        <member name="F:maui_coffee.ViewModel.CoffeeViewModel.goToDetailsCommand">
+            <summary>The backing field for <see cref="P:maui_coffee.ViewModel.CoffeeViewModel.GoToDetailsCommand"/>.</summary>
         </member>
-        <member name="P:maui_coffee.ViewModel.CoffeeViewModel.GetCoffeeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:maui_coffee.ViewModel.CoffeeViewModel.GetCoffeeAsync"/>.</summary>
+        <member name="P:maui_coffee.ViewModel.CoffeeViewModel.GoToDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:maui_coffee.ViewModel.CoffeeViewModel.GoToDetailsAsync(maui_coffee.Model.Coffee)"/>.</summary>
+        </member>
+        <member name="T:maui_coffee.ViewModel.DetailsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:maui_coffee.ViewModel.DetailsViewModel.Coffee">
+            <inheritdoc cref="F:maui_coffee.ViewModel.DetailsViewModel.coffee"/>
+        </member>
+        <member name="F:maui_coffee.ViewModel.DetailsViewModel.goBackCommand">
+            <summary>The backing field for <see cref="P:maui_coffee.ViewModel.DetailsViewModel.GoBackCommand"/>.</summary>
+        </member>
+        <member name="P:maui_coffee.ViewModel.DetailsViewModel.GoBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:maui_coffee.ViewModel.DetailsViewModel.GoBackAsync"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Coffee">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Coffee" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Coffee">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Coffee" generated properties.</summary>
         </member>
     </members>
 </doc>
